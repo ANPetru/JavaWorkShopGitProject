@@ -16,16 +16,6 @@ import java.util.HashSet;
  */
 public class Client {
 	/**
-	 * Description of the property streetName.
-	 */
-	private String streetName = "";
-
-	/**
-	 * Description of the property village.
-	 */
-	private String village = "";
-
-	/**
 	 * Description of the property surname.
 	 */
 	private String surname = "";
@@ -34,11 +24,6 @@ public class Client {
 	 * Description of the property invoices.
 	 */
 	public HashSet<Invoice> invoices = new HashSet<Invoice>();
-
-	/**
-	 * Description of the property country.
-	 */
-	private String country = "";
 
 	/**
 	 * Description of the property identifier.
@@ -51,19 +36,13 @@ public class Client {
 	private String dni = "";
 
 	/**
-	 * Description of the property streetNumber.
-	 */
-	private Integer streetNumber = Integer.valueOf(0);
-
-	/**
 	 * Description of the property nom.
 	 */
 	private String nom = "";
 
-	/**
-	 * Description of the property province.
-	 */
-	private String province = "";
+	private CLientAddress data = new CLientAddress("", "", "", Integer.valueOf(0), "");
+
+	
 
 	// Start of user code (user defined attributes for Client)
 
@@ -86,7 +65,7 @@ public class Client {
 	 * @return streetName 
 	 */
 	public String getStreetName() {
-		return this.streetName;
+		return this.data.getStreetName();
 	}
 
 	/**
@@ -94,7 +73,7 @@ public class Client {
 	 * @param newStreetName 
 	 */
 	public void setStreetName(String newStreetName) {
-		this.streetName = newStreetName;
+		this.data.setStreetName(newStreetName);
 	}
 
 	/**
@@ -102,7 +81,7 @@ public class Client {
 	 * @return village 
 	 */
 	public String getVillage() {
-		return this.village;
+		return this.data.getVillage();
 	}
 
 	/**
@@ -110,7 +89,7 @@ public class Client {
 	 * @param newVillage 
 	 */
 	public void setVillage(String newVillage) {
-		this.village = newVillage;
+		this.data.setVillage(newVillage);
 	}
 
 	/**
@@ -142,7 +121,7 @@ public class Client {
 	 * @return country 
 	 */
 	public String getCountry() {
-		return this.country;
+		return this.data.getCountry();
 	}
 
 	/**
@@ -150,7 +129,7 @@ public class Client {
 	 * @param newCountry 
 	 */
 	public void setCountry(String newCountry) {
-		this.country = newCountry;
+		this.data.setCountry(newCountry);
 	}
 
 	/**
@@ -190,7 +169,7 @@ public class Client {
 	 * @return streetNumber 
 	 */
 	public Integer getStreetNumber() {
-		return this.streetNumber;
+		return this.data.getStreetNumber();
 	}
 
 	/**
@@ -198,7 +177,7 @@ public class Client {
 	 * @param newStreetNumber 
 	 */
 	public void setStreetNumber(Integer newStreetNumber) {
-		this.streetNumber = newStreetNumber;
+		this.data.setStreetNumber(newStreetNumber);
 	}
 
 	/**
@@ -222,7 +201,7 @@ public class Client {
 	 * @return province 
 	 */
 	public String getProvince() {
-		return this.province;
+		return this.data.getProvince();
 	}
 
 	/**
@@ -230,7 +209,7 @@ public class Client {
 	 * @param newProvince 
 	 */
 	public void setProvince(String newProvince) {
-		this.province = newProvince;
+		this.data.setProvince(newProvince);
 	}
 
 }
