@@ -64,33 +64,25 @@ public class Client {
 	 * Returns streetName.
 	 * @return streetName 
 	 */
-	public String getStreetName() {
-		return this.data.getStreetName();
-	}
+	
 
 	/**
 	 * Sets a value to attribute streetName. 
 	 * @param newStreetName 
 	 */
-	public void setStreetName(String newStreetName) {
-		this.data.setStreetName(newStreetName);
-	}
+	
 
 	/**
 	 * Returns village.
 	 * @return village 
 	 */
-	public String getVillage() {
-		return this.data.getVillage();
-	}
+	
 
 	/**
 	 * Sets a value to attribute village. 
 	 * @param newVillage 
 	 */
-	public void setVillage(String newVillage) {
-		this.data.setVillage(newVillage);
-	}
+	
 
 	/**
 	 * Returns surname.
@@ -120,17 +112,12 @@ public class Client {
 	 * Returns country.
 	 * @return country 
 	 */
-	public String getCountry() {
-		return this.data.getCountry();
-	}
-
+	
 	/**
 	 * Sets a value to attribute country. 
 	 * @param newCountry 
 	 */
-	public void setCountry(String newCountry) {
-		this.data.setCountry(newCountry);
-	}
+	
 
 	/**
 	 * Returns identifier.
@@ -168,17 +155,13 @@ public class Client {
 	 * Returns streetNumber.
 	 * @return streetNumber 
 	 */
-	public Integer getStreetNumber() {
-		return this.data.getStreetNumber();
-	}
+	
 
 	/**
 	 * Sets a value to attribute streetNumber. 
 	 * @param newStreetNumber 
 	 */
-	public void setStreetNumber(Integer newStreetNumber) {
-		this.data.setStreetNumber(newStreetNumber);
-	}
+	
 
 	/**
 	 * Returns nom.
@@ -200,16 +183,12 @@ public class Client {
 	 * Returns province.
 	 * @return province 
 	 */
-	public String getProvince() {
-		return this.data.getProvince();
-	}
+	
 
 	/**
 	 * Sets a value to attribute province. 
 	 * @param newProvince 
 	 */
-	public void setProvince(String newProvince) {
-		this.data.setProvince(newProvince);
-	}
+	
 
 }
