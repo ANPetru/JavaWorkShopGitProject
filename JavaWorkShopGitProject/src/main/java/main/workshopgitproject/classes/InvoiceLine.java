@@ -21,7 +21,7 @@ public class InvoiceLine {
 	/**
 	 * Description of the property invoiceLineAmount.
 	 */
-	private EDouble invoiceLineAmount = null;
+	private double invoiceLineAmount = 0;
 
 	/**
 	 * Description of the property invoices.
@@ -74,7 +74,7 @@ public class InvoiceLine {
 	 * Returns invoiceLineAmount.
 	 * @return invoiceLineAmount 
 	 */
-	public EDouble getInvoiceLineAmount() {
+	public double getInvoiceLineAmount() {
 		return this.invoiceLineAmount;
 	}
 
@@ -82,7 +82,7 @@ public class InvoiceLine {
 	 * Sets a value to attribute invoiceLineAmount. 
 	 * @param newInvoiceLineAmount 
 	 */
-	public void setInvoiceLineAmount(EDouble newInvoiceLineAmount) {
+	public void setInvoiceLineAmount(double newInvoiceLineAmount) {
 		this.invoiceLineAmount = newInvoiceLineAmount;
 	}
 

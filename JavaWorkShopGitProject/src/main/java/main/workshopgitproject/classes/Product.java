@@ -3,6 +3,8 @@
  *******************************************************************************/
 package main.workshopgitproject.classes;
 
+import java.util.HashSet;
+
 // Start of user code (user defined imports)
 
 // End of user code
@@ -21,12 +23,12 @@ public class Product {
 	/**
 	 * Description of the property description.
 	 */
-	private EString description = null;
+	private String description = null;
 
 	/**
 	 * Description of the property suplierID.
 	 */
-	private EString suplierID = null;
+	private String suplierID = null;
 
 	/**
 	 * Description of the property identifier.
@@ -36,17 +38,17 @@ public class Product {
 	/**
 	 * Description of the property stock.
 	 */
-	private EInt stock = null;
+	private int stock = 0;
 
 	/**
 	 * Description of the property suplierName.
 	 */
-	private EString suplierName = null;
+	private String suplierName = null;
 
 	/**
 	 * Description of the property price.
 	 */
-	private EDouble price = null;
+	private double price = 0;
 
 	// Start of user code (user defined attributes for Product)
 
@@ -76,7 +78,7 @@ public class Product {
 	 * Returns description.
 	 * @return description 
 	 */
-	public EString getDescription() {
+	public String getDescription() {
 		return this.description;
 	}
 
@@ -84,7 +86,7 @@ public class Product {
 	 * Sets a value to attribute description. 
 	 * @param newDescription 
 	 */
-	public void setDescription(EString newDescription) {
+	public void setDescription(String newDescription) {
 		this.description = newDescription;
 	}
 
@@ -92,7 +94,7 @@ public class Product {
 	 * Returns suplierID.
 	 * @return suplierID 
 	 */
-	public EString getSuplierID() {
+	public String getSuplierID() {
 		return this.suplierID;
 	}
 
@@ -100,7 +102,7 @@ public class Product {
 	 * Sets a value to attribute suplierID. 
 	 * @param newSuplierID 
 	 */
-	public void setSuplierID(EString newSuplierID) {
+	public void setSuplierID(String newSuplierID) {
 		this.suplierID = newSuplierID;
 	}
 
@@ -124,7 +126,7 @@ public class Product {
 	 * Returns stock.
 	 * @return stock 
 	 */
-	public EInt getStock() {
+	public int getStock() {
 		return this.stock;
 	}
 
@@ -132,7 +134,7 @@ public class Product {
 	 * Sets a value to attribute stock. 
 	 * @param newStock 
 	 */
-	public void setStock(EInt newStock) {
+	public void setStock(int newStock) {
 		this.stock = newStock;
 	}
 
@@ -140,7 +142,7 @@ public class Product {
 	 * Returns suplierName.
 	 * @return suplierName 
 	 */
-	public EString getSuplierName() {
+	public String getSuplierName() {
 		return this.suplierName;
 	}
 
@@ -148,7 +150,7 @@ public class Product {
 	 * Sets a value to attribute suplierName. 
 	 * @param newSuplierName 
 	 */
-	public void setSuplierName(EString newSuplierName) {
+	public void setSuplierName(String newSuplierName) {
 		this.suplierName = newSuplierName;
 	}
 
@@ -156,7 +158,7 @@ public class Product {
 	 * Returns price.
 	 * @return price 
 	 */
-	public EDouble getPrice() {
+	public double getPrice() {
 		return this.price;
 	}
 
@@ -164,7 +166,7 @@ public class Product {
 	 * Sets a value to attribute price. 
 	 * @param newPrice 
 	 */
-	public void setPrice(EDouble newPrice) {
+	public void setPrice(double newPrice) {
 		this.price = newPrice;
 	}
 

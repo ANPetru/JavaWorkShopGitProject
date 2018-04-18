@@ -3,6 +3,8 @@
  *******************************************************************************/
 package main.workshopgitproject.classes;
 
+import java.util.HashSet;
+
 // Start of user code (user defined imports)
 
 // End of user code
@@ -41,7 +43,7 @@ public class Client {
 	/**
 	 * Description of the property identifier.
 	 */
-	private EIntegerObject identifier = null;
+	private int identifier = 0;
 
 	/**
 	 * Description of the property dni.
@@ -155,7 +157,7 @@ public class Client {
 	 * Returns identifier.
 	 * @return identifier 
 	 */
-	public EIntegerObject getIdentifier() {
+	public int getIdentifier() {
 		return this.identifier;
 	}
 
@@ -163,7 +165,7 @@ public class Client {
 	 * Sets a value to attribute identifier. 
 	 * @param newIdentifier 
 	 */
-	public void setIdentifier(EIntegerObject newIdentifier) {
+	public void setIdentifier(int newIdentifier) {
 		this.identifier = newIdentifier;
 	}
 
