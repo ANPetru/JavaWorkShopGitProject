@@ -15,11 +15,12 @@ import java.util.HashSet;
  * @author alux9127477l
  */
 public class Client {
+	
 	/**
 	 * Description of the property streetName.
 	 */
 	private String streetName = "";
-
+	
 	/**
 	 * Description of the property village.
 	 */
