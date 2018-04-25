@@ -149,5 +149,14 @@ public class Invoice {
 	public void setIdentifier(int newIdentifier) {
 		this.identifier = newIdentifier;
 	}
+	
+	private void calculateTotalnvoiceAmount() {
+		
+		double amount=0;
+		for(InvoiceLine i : invoiceLines) {
+			amount += i.getInvoiceLineAmount();
+		}
+		this.totalAmount =amount;
+	}
 
 }

@@ -133,5 +133,12 @@ public class InvoiceLine {
 	public void setNumber(int newNumber) {
 		this.number = newNumber;
 	}
+	
+	private void calculateInvoiceLineAmount() {
+		
+		double amount =0;
+		amount=this.quantity * products.getPrice(); 
+		this.invoiceLineAmount = amount;
+	}
 
 }
