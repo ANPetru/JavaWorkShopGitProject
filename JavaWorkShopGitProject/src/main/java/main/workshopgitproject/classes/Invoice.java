@@ -156,7 +156,8 @@ public class Invoice {
 		for(InvoiceLine i : invoiceLines) {
 			amount += i.getInvoiceLineAmount();
 		}
-		this.totalAmount =amount;
+	
+		this.totalAmount =this.aplyDiscount?amount*0.9:amount;
 	}
 
 }
