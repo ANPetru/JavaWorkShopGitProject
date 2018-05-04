@@ -179,6 +179,10 @@ public class Client {
 		this.nom = newNom;
 	}
 
+	public void shutDown() {
+		System.out.println("Thanks for using the application");
+	}
+
 	/**
 	 * Returns province.
 	 * @return province 
