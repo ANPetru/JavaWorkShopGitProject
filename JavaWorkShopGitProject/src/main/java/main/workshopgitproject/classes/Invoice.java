@@ -64,15 +64,17 @@ public class Invoice {
 	// End of user code
 	/**
 	 * Returns clients.
-	 * @return clients 
+	 * 
+	 * @return clients
 	 */
 	public Client getClients() {
 		return this.clients;
 	}
 
 	/**
-	 * Sets a value to attribute clients. 
-	 * @param newClients 
+	 * Sets a value to attribute clients.
+	 * 
+	 * @param newClients
 	 */
 	public void setClients(Client newClients) {
 		this.clients = newClients;
@@ -80,15 +82,17 @@ public class Invoice {
 
 	/**
 	 * Returns datePurchase.
-	 * @return datePurchase 
+	 * 
+	 * @return datePurchase
 	 */
 	public Date getDatePurchase() {
 		return this.datePurchase;
 	}
 
 	/**
-	 * Sets a value to attribute datePurchase. 
-	 * @param newDatePurchase 
+	 * Sets a value to attribute datePurchase.
+	 * 
+	 * @param newDatePurchase
 	 */
 	public void setDatePurchase(Date newDatePurchase) {
 		this.datePurchase = newDatePurchase;
@@ -96,15 +100,17 @@ public class Invoice {
 
 	/**
 	 * Returns aplyDiscount.
-	 * @return aplyDiscount 
+	 * 
+	 * @return aplyDiscount
 	 */
 	public Boolean getAplyDiscount() {
 		return this.aplyDiscount;
 	}
 
 	/**
-	 * Sets a value to attribute aplyDiscount. 
-	 * @param newAplyDiscount 
+	 * Sets a value to attribute aplyDiscount.
+	 * 
+	 * @param newAplyDiscount
 	 */
 	public void setAplyDiscount(Boolean newAplyDiscount) {
 		this.aplyDiscount = newAplyDiscount;
@@ -112,15 +118,17 @@ public class Invoice {
 
 	/**
 	 * Returns totalAmount.
-	 * @return totalAmount 
+	 * 
+	 * @return totalAmount
 	 */
 	public double getTotalAmount() {
 		return this.totalAmount;
 	}
 
 	/**
-	 * Sets a value to attribute totalAmount. 
-	 * @param newTotalAmount 
+	 * Sets a value to attribute totalAmount.
+	 * 
+	 * @param newTotalAmount
 	 */
 	public void setTotalAmount(double newTotalAmount) {
 		this.totalAmount = newTotalAmount;
@@ -128,7 +136,8 @@ public class Invoice {
 
 	/**
 	 * Returns invoiceLines.
-	 * @return invoiceLines 
+	 * 
+	 * @return invoiceLines
 	 */
 	public HashSet<InvoiceLine> getInvoiceLines() {
 		return this.invoiceLines;
@@ -136,18 +145,31 @@ public class Invoice {
 
 	/**
 	 * Returns identifier.
-	 * @return identifier 
+	 * 
+	 * @return identifier
 	 */
 	public int getIdentifier() {
 		return this.identifier;
 	}
 
 	/**
-	 * Sets a value to attribute identifier. 
-	 * @param newIdentifier 
+	 * Sets a value to attribute identifier.
+	 * 
+	 * @param newIdentifier
 	 */
 	public void setIdentifier(int newIdentifier) {
 		this.identifier = newIdentifier;
+	}
+
+	private void calculateTotalnvoiceAmount() {
+
+		double amount = 0;
+		for (InvoiceLine i : invoiceLines) {
+			amount += i.getInvoiceLineAmount();
+		}
+		
+		double discount = 0.9;
+		this.totalAmount = this.aplyDiscount ? amount * discount : amount;
 	}
 
 }

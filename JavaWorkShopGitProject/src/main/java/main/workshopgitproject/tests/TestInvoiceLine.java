@@ -59,6 +59,7 @@ public class TestInvoiceLine {
 		double correctPrice=10;
 		assertEquals(correctPrice,ivn.getInvoiceLineAmount(),0.02);
 		
+
 		
 	}
 
@@ -96,6 +97,8 @@ public class TestInvoiceLine {
 		
 		double correctInvoiceAmount = 40;
 		assertEquals(correctInvoiceAmount,invo.getTotalAmount(),0.02);
+		// Vamos a calcular el importe de cuatro paquetes de galletas, sabiendo que cada paquete vale 2,5 euros
+		
 	}
 
 	/**

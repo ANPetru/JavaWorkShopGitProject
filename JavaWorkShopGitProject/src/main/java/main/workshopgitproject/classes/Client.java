@@ -17,6 +17,7 @@ import java.util.HashSet;
 public class Client {
 	
 	/**
+<<<<<<< HEAD
 	 * Description of the property streetName.
 	 */
 	private String streetName = "";
@@ -27,6 +28,8 @@ public class Client {
 	private String village = "";
 
 	/**
+=======
+>>>>>>> branch 'master' of https://github.com/ANPetru/JavaWorkShopGitProject.git
 	 * Description of the property surname.
 	 */
 	private String surname = "";
@@ -35,11 +38,6 @@ public class Client {
 	 * Description of the property invoices.
 	 */
 	public HashSet<Invoice> invoices = new HashSet<Invoice>();
-
-	/**
-	 * Description of the property country.
-	 */
-	private String country = "";
 
 	/**
 	 * Description of the property identifier.
@@ -52,19 +50,13 @@ public class Client {
 	private String dni = "";
 
 	/**
-	 * Description of the property streetNumber.
-	 */
-	private Integer streetNumber = Integer.valueOf(0);
-
-	/**
 	 * Description of the property nom.
 	 */
 	private String nom = "";
 
-	/**
-	 * Description of the property province.
-	 */
-	private String province = "";
+	private CLientAddress data = new CLientAddress("", "", "", Integer.valueOf(0), "");
+
+	
 
 	// Start of user code (user defined attributes for Client)
 
@@ -86,33 +78,25 @@ public class Client {
 	 * Returns streetName.
 	 * @return streetName 
 	 */
-	public String getStreetName() {
-		return this.streetName;
-	}
+	
 
 	/**
 	 * Sets a value to attribute streetName. 
 	 * @param newStreetName 
 	 */
-	public void setStreetName(String newStreetName) {
-		this.streetName = newStreetName;
-	}
+	
 
 	/**
 	 * Returns village.
 	 * @return village 
 	 */
-	public String getVillage() {
-		return this.village;
-	}
+	
 
 	/**
 	 * Sets a value to attribute village. 
 	 * @param newVillage 
 	 */
-	public void setVillage(String newVillage) {
-		this.village = newVillage;
-	}
+	
 
 	/**
 	 * Returns surname.
@@ -142,17 +126,12 @@ public class Client {
 	 * Returns country.
 	 * @return country 
 	 */
-	public String getCountry() {
-		return this.country;
-	}
-
+	
 	/**
 	 * Sets a value to attribute country. 
 	 * @param newCountry 
 	 */
-	public void setCountry(String newCountry) {
-		this.country = newCountry;
-	}
+	
 
 	/**
 	 * Returns identifier.
@@ -190,17 +169,13 @@ public class Client {
 	 * Returns streetNumber.
 	 * @return streetNumber 
 	 */
-	public Integer getStreetNumber() {
-		return this.streetNumber;
-	}
+	
 
 	/**
 	 * Sets a value to attribute streetNumber. 
 	 * @param newStreetNumber 
 	 */
-	public void setStreetNumber(Integer newStreetNumber) {
-		this.streetNumber = newStreetNumber;
-	}
+	
 
 	/**
 	 * Returns nom.
@@ -218,20 +193,20 @@ public class Client {
 		this.nom = newNom;
 	}
 
+	public void shutDown() {
+		System.out.println("Thanks for using the application");
+	}
+
 	/**
 	 * Returns province.
 	 * @return province 
 	 */
-	public String getProvince() {
-		return this.province;
-	}
+	
 
 	/**
 	 * Sets a value to attribute province. 
 	 * @param newProvince 
 	 */
-	public void setProvince(String newProvince) {
-		this.province = newProvince;
-	}
+	
 
 }

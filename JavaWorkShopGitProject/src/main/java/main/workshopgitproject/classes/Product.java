@@ -26,11 +26,6 @@ public class Product {
 	private String description = null;
 
 	/**
-	 * Description of the property suplierID.
-	 */
-	private String suplierID = null;
-
-	/**
 	 * Description of the property identifier.
 	 */
 	private int identifier = 0;
@@ -40,10 +35,7 @@ public class Product {
 	 */
 	private int stock = 0;
 
-	/**
-	 * Description of the property suplierName.
-	 */
-	private String suplierName = null;
+	private ProductSuplier suplierProduct = new ProductSuplier(null, null);
 
 	/**
 	 * Description of the property price.
@@ -94,17 +86,13 @@ public class Product {
 	 * Returns suplierID.
 	 * @return suplierID 
 	 */
-	public String getSuplierID() {
-		return this.suplierID;
-	}
+	
 
 	/**
 	 * Sets a value to attribute suplierID. 
 	 * @param newSuplierID 
 	 */
-	public void setSuplierID(String newSuplierID) {
-		this.suplierID = newSuplierID;
-	}
+	
 
 	/**
 	 * Returns identifier.
@@ -142,17 +130,13 @@ public class Product {
 	 * Returns suplierName.
 	 * @return suplierName 
 	 */
-	public String getSuplierName() {
-		return this.suplierName;
-	}
+	
 
 	/**
 	 * Sets a value to attribute suplierName. 
 	 * @param newSuplierName 
 	 */
-	public void setSuplierName(String newSuplierName) {
-		this.suplierName = newSuplierName;
-	}
+	
 
 	/**
 	 * Returns price.
